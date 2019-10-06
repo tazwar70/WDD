@@ -6,36 +6,131 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <title>WDD</title>
 </head>
 <body>
 
-  <section class="section-navbar"> <!--Nav bar-->
+   <!--Nav bar-->
+<!--Different Navbar with working hamburger menu-->
+    <header>
+      <a href="#main-menu" id="main-menu-toggle" class="menu-toggle" aria-label="Open main menu">
+        <span class="sr-only"></span>
+        <span class="fa fa-bars" aria-hidden="true"></span>
+      </a>
+      
+      <h1 class="logo"><i class="fab fa-facebook-square" style="padding-right: 10px;"></i>Facebook</h1>
+      
+      <nav id="main-menu" class="main-menu" aria-label="Main menu">
+        <a href="#main-menu-toggle"
+           id="main-menu-close"
+           class="menu-close"
+           aria-label="Close main menu">
+          <span class="sr-only"></span>
+          <span class="fa fa-close" aria-hidden="true"></span>
+        </a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Me</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
+      </nav>
+      <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
+    </header>
+<!--ends here-->
+
+<!--
     <nav class="nav-navbar">
       <ul class="navbar-list">
         <li class="navbar-list-item">LOGO</li>
         <li class="navbar-list-item">NAME</li>
         <li class="navbar-list-item">HOME</li>
-        <li class="navbar-list-item">Settings dropdown</li>
+        <li class="navbar-list-item">SETTINGS</li>
       </ul>
     </nav>
-  </section> <!---->
+-->
+
+  
 
   <section class="body-content"> <!--All content goes here-->
+
+
     <div class="container-content"> <!--Content item-->
       <div class="card">
-        <img class="card-image" src="https://images.unsplash.com/photo-1570215171609-a54fb21cb7c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Avatar" style="width:100%">
+        <img class="card-image" src="https://images.unsplash.com/photo-1570171278960-d6c2b316f3b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Avatar" style="width:100%">
         <div class="container-text">
-          <h4><b>John Doe</b></h4>
-          <p>Architect & Engineer</p>
+          <h2><b>theverticalstory</b></h2>
+          <h4><i>@theverticalstory</i><br>A picture of the mountains, shot at 135mm f/9 ISO 800 1/8000s, link to the photo <a href="https://images.unsplash.com/photo-1570171278960-d6c2b316f3b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">here.</a></h4>
         </div>
         <div class="card-buttons">
-          <button class="card-button" type="button" name="button"><i class="far fa-thumbs-up"></i> Like</button>
+          <button class="card-like-button" type="button" name="button"><i class="far fa-thumbs-up"></i> Like</button>
           <button class="card-button" type="button" name="button"><i class="fas fa-comment"></i> Comment</button>
           <button class="card-button" type="button" name="button"><i class="fas fa-share"></i> Share</button>
         </div>
       </div>
     </div> <!--content item ends here-->
+
+    <div class="container-content"> <!--Content item-->
+      <div class="card">
+        <img class="card-image" src="https://images.unsplash.com/photo-1569834381156-7b735e41e57d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" alt="Avatar" style="width:100%">
+        <div class="container-text">
+          <h2><b>Mark Boss</b></h2>
+          <h4><i>@vork</i><br>A picture of the mountains, shot at 18mm f/4.5 ISO 250 3.2s, link to the photo <a href="https://images.unsplash.com/photo-1569834381156-7b735e41e57d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80">here.</a></h4>
+        </div>
+        <div class="card-buttons">
+          <button class="card-like-button" type="button" name="button"><i class="far fa-thumbs-up"></i> Like</button>
+          <button class="card-button" type="button" name="button"><i class="fas fa-comment"></i> Comment</button>
+          <button class="card-button" type="button" name="button"><i class="fas fa-share"></i> Share</button>
+        </div>
+      </div>
+    </div> <!--content item ends here-->
+
+    <div class="container-content"> <!--Content item-->
+      <div class="card">
+        <img class="card-image" src="https://images.unsplash.com/photo-1569261995036-70d0dd50be24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" alt="Avatar" style="width:100%">
+        <div class="container-text">
+          <h2><b>Janke Laskowski</b></h2>
+          <h4><i>@janke</i><br>A picture a mountain around a lake, shot with a SONY A7RII, link to the photo <a href="https://images.unsplash.com/photo-1569261995036-70d0dd50be24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80">here.</a></h4>
+        </div>
+        <div class="card-buttons">
+          <button class="card-like-button" type="button" name="button"><i class="far fa-thumbs-up"></i> Like</button>
+          <button class="card-button" type="button" name="button"><i class="fas fa-comment"></i> Comment</button>
+          <button class="card-button" type="button" name="button"><i class="fas fa-share"></i> Share</button>
+        </div>
+      </div>
+    </div> <!--content item ends here-->
+
+    <div class="container-content"> <!--Content item-->
+      <div class="card">
+        <img class="card-image" src="https://images.unsplash.com/photo-1568021735466-efd8a4c435af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1789&q=80" alt="Avatar" style="width:100%">
+        <div class="container-text">
+          <h2><b>Sami Takarautio</b></h2>
+          <h4><i>@samimatias</i><br>Aurora's Dance, shot with Canon 6D at 20mm f/1.4 ISO 3200 1s, link to the photo <a href="https://images.unsplash.com/photo-1568021735466-efd8a4c435af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1789&q=80">here.</a></h4>
+        </div>
+        <div class="card-buttons">
+          <button class="card-like-button" type="button" name="button"><i class="far fa-thumbs-up"></i> Like</button>
+          <button class="card-button" type="button" name="button"><i class="fas fa-comment"></i> Comment</button>
+          <button class="card-button" type="button" name="button"><i class="fas fa-share"></i> Share</button>
+        </div>
+      </div>
+    </div> <!--content item ends here-->
+
+    <div class="container-content"> <!--Content item-->
+      <div class="card">
+        <img class="card-image" src="https://images.unsplash.com/photo-1568216838236-0e791099ba97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Avatar" style="width:100%">
+        <div class="container-text">
+          <h2><b>Jessica Fadel</b></h2>
+          <h4><i>@jessicafadel</i><br>Leaf, plant, tree and maple, shot with Canon Rebel T3i at 250mm f/5.6 ISO 800 1/2000s, link to the photo <a href="https://images.unsplash.com/photo-1568216838236-0e791099ba97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">here.</a></h4>
+        </div>
+        <div class="card-buttons">
+          <button class="card-like-button" type="button" name="button"><i class="far fa-thumbs-up"></i> Like</button>
+          <button class="card-button" type="button" name="button"><i class="fas fa-comment"></i> Comment</button>
+          <button class="card-button" type="button" name="button"><i class="fas fa-share"></i> Share</button>
+        </div>
+      </div>
+    </div> <!--content item ends here-->
+
+
   </section> <!--body content ends here-->
 
 </body>
