@@ -11,7 +11,7 @@ body{
 header{
   padding: 0;
   margin: 0;
-  wi dth: 100%;
+  width: 100%;
   color: rgb(45, 107, 148);
   background-color: white;
 }
@@ -19,6 +19,8 @@ h1{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 1.5em;
 }
+
+
 
 /**/
 .floating-buttons {
@@ -386,6 +388,61 @@ h1{
   }
 }
 
+/*Dropdown*/
+
+.dropdown {
+  float: left;
+  align-self: left;
+  align-content: left;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  width: 100%;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(48, 135, 185);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(94, 173, 219);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(48, 135, 185);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*Dropdown*/
+
 /*
  Larger screen styling
  Horizontal menu
@@ -453,6 +510,79 @@ h1{
     background-color: rgb(96, 181, 230);
     color: white;
   }
+
+  
+/*Dropdown*/
+/*
+dark blue
+rgb(48, 135, 185)
+
+light blue
+rgb(96, 181, 230)
+*/
+
+
+/*Dropdown*/
+
+.dropdown {
+  float: left;
+  align-self: left;
+  align-content: left;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: auto;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  width: 100%;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: rgb(96, 181, 230);
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: rgb(94, 173, 219);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(96, 181, 230);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*Dropdown*/
+
+
+
+/*Dropdown*/
+
 }
 
 /*
