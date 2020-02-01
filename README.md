@@ -11,4 +11,5 @@ The following is an explanation of the commits made throughout the project,
  4. Added profile pictures and brushed up layouts. Added more posts. 
  5. Added missing buttons to the new posts. Added a new post with a responsive gallery. Plus a responsive action button for messenger.
  6. Added a dropdown menu to the settings.
- 7. Changed the gallery to a scroll view insted. Made minor text adjustments.
+ 7. Changed the gallery to a scroll view insted. Made minor text adjustme.
+ 8. Personal Page Section Added
