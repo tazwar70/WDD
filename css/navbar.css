@@ -34,7 +34,9 @@ html {
     height: 50px;
     width: 100%;
     background-color: var(--dark_blue);
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .nav>.nav-header {
@@ -148,7 +150,7 @@ html {
         display: block;
         width: 25px;
         height: 10px;
-        border-top: 2px solid #eee;
+        border-top: 3px solid white;
     }
 
     .nav>.nav-links {
@@ -156,8 +158,8 @@ html {
         display: block;
         width: 100%;
         background-color: var(--light_blue);
-        height: 0px;
-        transition: all 0.8s ease-in-out;
+        height: 0;
+        transition: all 0.4s ease-in-out;
         overflow-y: hidden;
         top: 50px;
         left: 0px;

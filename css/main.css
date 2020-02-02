@@ -1,60 +1,71 @@
-:root{
-  --light_blue:rgb(119, 182, 224);
-  --dark_blue:rgb(45, 107, 148);
+:root {
+  --light_blue: rgb(119, 182, 224);
+  --dark_blue: rgb(45, 107, 148);
+  --highlight: rgb(9, 39, 58);
 }
-html{
-    padding: 0;
-    margin: 0;
-    background-color: rgb(119, 182, 224);
+
+html {
+  padding: 0;
+  margin: 0;
+  font-family: 'segoe ui';
+  background-color: var(--light_blue);
 }
-body{
-    padding: 0;
-    margin: 0;
+
+body {
+  padding: 0;
+  margin: 0;
 }
-header{
+
+header {
   padding: 0;
   margin: 0;
   width: 100%;
-  color: rgb(45, 107, 148);
+  color: var(--dark_blue);
   background-color: white;
 }
 
-
+.body-content{
+  margin-top: 10%;
+}
 /*For Cards*/
 .card {
   /* Add shadows to create the "card" effect */
   display: block;
   background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   width: 80%;
   margin-left: 10%;
   margin-bottom: 5%;
   padding: 0;
-  border-radius: 7px; /* 5px rounded corners */
+  border-radius: 7px;
+  /* 5px rounded corners */
 }
+
 /**/
-.profile-ID{
+.profile-ID {
   display: flex;
   margin-top: 2%;
   margin-left: 2%;
   padding: 0;
   width: 100%;
 }
-.profile-ID h2{
+
+.profile-ID h2 {
   display: block;
   margin-left: 2%;
   font-size: 1.5em;
 }
 
-.profile-dp{
+.profile-dp {
   display: block;
   border-radius: 50%;
   border-style: solid;
-  border-color: rgb(54, 112, 145);
+  border-color: var(--dark_blue);
   width: 80px;
   height: 80px;
 }
+
 /* Add some padding inside the card container */
 .container-text {
   display: block;
@@ -67,43 +78,50 @@ header{
   display: flex;
   border-radius: 7px 7px 0 0;
 }
-.card-buttons{  /*container for the buttons*/
+
+.card-buttons {
+  /*container for the buttons*/
   display: flex;
   width: 100%;
   height: 60%;
   align-content: space-around;
 }
-.card-button{
+
+.card-button {
   font-size: 1em;
   margin: 0px;
   padding: 7px;
   width: 100%;
   border-style: none;
   border-radius: 7px;
-  color: rgb(81, 142, 170);
+  color: var(--light_blue);
   background-color: white;
 }
-.card-like-button{
+
+.card-like-button {
   font-size: 1em;
   margin: 0px;
   padding: 7px;
   width: 100%;
   border-style: none;
   border-radius: 7px;
-  color: rgb(81, 142, 170);
+  color: var(--light_blue);
   background-color: white;
 }
-.card-like-button:hover{
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  background-color: rgb(130, 182, 206);
+
+.card-like-button:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  background-color: var(--light_blue);
   color: white;
 }
-.card-button:hover{
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  background-color: rgb(130, 182, 206);
+
+.card-button:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  background-color: var(--light_blue);
   color: white;
 }
-.container-gallery{
+
+.container-gallery {
   margin: 0;
   padding: 0;
   padding-left: 10px;
@@ -111,7 +129,8 @@ header{
   height: 433px;
   object-fit: cover;
 }
-.container-gallery-row{
+
+.container-gallery-row {
   display: flex;
   overflow: scroll;
   scroll-behavior: smooth;
@@ -120,6 +139,7 @@ header{
   overflow-x: scroll;
   object-fit: cover;
 }
+
 /*
 .container-gallery-column{
   flex: 25%;
@@ -137,16 +157,18 @@ header{
 
 
 @media (min-width: 768px) {
+
   /* Undo positioning of off-canvas menu */
-  header{
-    background-color: rgb(48, 135, 185);
+  header {
+    background-color: var(--dark_blue);
     color: white;
   }
-/*Gallery layout*/
-.container-gallery{
-  width: 100%;
-  height: auto;
-}
+
+  /*Gallery layout*/
+  .container-gallery {
+    width: 100%;
+    height: auto;
+  }
 
 }
 
@@ -186,16 +208,17 @@ article h2 {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: rgb(48, 135, 185);
+  background: var(--dark_blue));
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(97, 176, 221);
+  background: var(--light_blue);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(32, 104, 133);
+  background: var(--highlight);
 }
+
 /*scrollbar code ends here*/
